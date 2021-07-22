@@ -15,22 +15,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
-    fallback: {
-      path: require.resolve("path-browserify"),
-      util: require.resolve("util/"),
-      assert: require.resolve("assert/"),
-      https: require.resolve("https-browserify"),
-      http: require.resolve("stream-http"),
-      buffer: require.resolve("buffer/"),
-      url: require.resolve("url/"),
-      crypto: require.resolve("crypto-browserify"),
-      stream: require.resolve("stream-browserify"),
-      zlib: require.resolve("browserify-zlib"),
-      os: require.resolve("os-browserify/browser"),
-      constants: require.resolve("constants-browserify"),
-      timers: require.resolve("timers-browserify"),
-      process: require.resolve("process/browser"),
-    },
+    fallback: {},
   },
   output: {
     filename: "bundle.js",
