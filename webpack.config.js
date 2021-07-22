@@ -1,4 +1,5 @@
 const path = require("path");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
   target: "node",
@@ -21,4 +22,5 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "lib"),
   },
+  externals: [nodeExternals()],
 };
